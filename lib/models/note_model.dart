@@ -3,9 +3,17 @@ class NoteModel {
   final String title;
   final String content;
 
-  NoteModel({
+  const NoteModel({
     required this.id,
     required this.title,
     required this.content,
   });
+
+  factory NoteModel.empty() {
+    return const NoteModel(
+      id: '',
+      title: '',
+      content: '',
+    );
+  }
 }

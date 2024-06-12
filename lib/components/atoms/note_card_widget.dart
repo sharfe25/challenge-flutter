@@ -1,5 +1,6 @@
-import 'package:challenge_flutter/models/note_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../models/note_model.dart';
 
 class NoteCardWidget extends StatelessWidget {
   final NoteModel note;

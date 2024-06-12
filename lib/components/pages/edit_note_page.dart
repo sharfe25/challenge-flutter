@@ -1,10 +1,12 @@
-import 'package:challenge_flutter/models/note_model.dart';
 import 'package:flutter/material.dart';
+import 'package:phase_one_flutter/components/templates/dashboard_template.dart';
 import 'package:provider/provider.dart';
 
+import '../../models/note_model.dart';
 import '../../providers/note_provider.dart';
 import '../molecules/note_form_widget.dart';
 
+/// The `EditNotePage` widget allows users to create a new note or edit an existing one.
 class EditNotePage extends StatelessWidget {
   final TextEditingController titleController = TextEditingController();
   final TextEditingController contentController = TextEditingController();
@@ -21,10 +23,8 @@ class EditNotePage extends StatelessWidget {
       contentController.text = note.content;
     }
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(note == null ? 'New Note' : 'Edit Note'),
-      ),
+    return DashboardTemplate(
+      title: note == null ? 'New Note' : 'Edit Note',
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: NoteFormWidget(

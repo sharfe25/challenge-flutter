@@ -1,9 +1,8 @@
-import 'package:challenge_flutter/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/note_provider.dart';
-
+import 'routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +19,6 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'Notes App',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
         initialRoute: '/',
         routes: routes,
       ),

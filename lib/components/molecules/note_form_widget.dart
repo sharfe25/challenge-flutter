@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../atoms/elevated_button_widget.dart';
+
 class NoteFormWidget extends StatelessWidget {
   final TextEditingController titleController;
   final TextEditingController contentController;
   final VoidCallback onSave;
 
-  const NoteFormWidget({super.key, 
+  const NoteFormWidget({
+    super.key,
     required this.titleController,
     required this.contentController,
     required this.onSave,
@@ -24,7 +27,7 @@ class NoteFormWidget extends StatelessWidget {
           decoration: const InputDecoration(labelText: 'Content'),
         ),
         const SizedBox(height: 20),
-        ElevatedButton(
+        ElevatedButtonWidget(
           onPressed: onSave,
           child: const Text('Save'),
         ),

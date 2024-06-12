@@ -14,7 +14,7 @@ class NoteListWidget extends StatelessWidget {
       itemCount: notes.length,
       itemBuilder: (context, index) {
         final note = notes[index];
-        return NoteCardWidget(note: note);
+        return NoteCardWidget(key: Key('note-card-$index'),note: note);
       },
     );
   }
