@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'providers/note_provider.dart';
 import 'routes.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
