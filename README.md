@@ -3,6 +3,11 @@
 ## Description
 Notes App is a Flutter application for managing notes. Users can create, view, edit, and delete notes. The application uses the Provider pattern for state management and follows Atomic Design principles for organizing UI components.
 
+## Photos
+![Preview](home_page.png)
+![Preview](create_note_page.png)
+![Preview](note_page.png)
+
 ## Features
 
 - Create new notes
